@@ -1,12 +1,82 @@
-body{
+/* General Styling */
+body {
     background-color: #080808;
     color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(image1.jpg);
-    background-size:cover;
-    background-position:center;
 
+#header {
+    width: 100%;
+    height: 70vh; /* Adjust header height as needed */
+    /*background-image: url('image1.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image fills the header while maintaining aspect ratio */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Ensures child elements appear inside the header */
+    overflow: hidden; /* Prevents content from spilling out */
+}
+
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes logo and nav items to opposite sides */
+    flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.logo {
+    width: 140px;
+}
+
+/* Navigation Menu Styling */
+nav ul {
+    display: flex;
+    gap: 20px; /* Space between list items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+    position:relative;
+}
+
+nav ul li a::after {
+    content:'';
+    width:0%;
+    height:3px;
+    background:#ff004f;
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-texgt{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size:60px;
+    margin-top:20px;
+}
+.header-text h1 span{
+    color:goldenrod;
 }
