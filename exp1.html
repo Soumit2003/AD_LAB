@@ -3,38 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1f04c814a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="header">
         <div class="container">
+        <!--------------------------navigation------------------------------------------->
             <nav>
-                <img src="C:/Users\KIIT\Desktop\AD_LAB\images\image2.jpeg" alt="Logo" class="logo">
+                <img src="C:\Users\KIIT\Desktop\AD_LAB\images\Logo.png" alt="Logo" class="logo">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#My-Project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Machine_Learning Designer</p>
-                <h1>Hi, I'm <span>Soumit</span><br> Roy From India</h1>
+                <h1>Hi, I'm <span>Soumit</span><br> Roy From India </h1>
+                <img class="image" src="profile.png">
             </div>
         </div>
     </header>
-<!-- -----------------------------------about----------------------------->>
+
+    <!----------------------- About Section -------------------------------->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img>
+                    <img src="C:/Users/KIIT/Desktop/AD_LAB/images/About.png">
                 </div>
-                <div class="about-col-2"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I'm Soumit Roy, a curious mind passionate about machine learning and always eager to explore new ideas. With a strong foundation in Python, I enjoy solving problems and diving deep into the world of technology.
+
+                        Beyond coding, I have a deep love for nature and find peace in its beauty. I'm also a people person who enjoys building meaningful friendships and learning from others' experiences.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Developed Machine Learning and Deep Learning Projects</li>
+                            <li><span>Computer Vision</span><br>Worked on Computer Vision Projects</li>
+                            <li><span>Python</span><br>Developed Python Projects</li>
+                            <li><span>SQL</span><br>Experience in MySQL and Database Management</li>
+                            <li><span>Pandas</span><br>Worked with Pandas for Data Analysis</li>
+                            <li><span>Excel</span><br>Experience with Data Manipulation in Excel</li>
+                            <li><span>HTML/CSS</span><br>Developed Front-End HTML/CSS Projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Part of AICTE-EduSkills Virtual Internship Program</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>B.Tech in Electronics and Computer Science Engineering</li>
+                            <li><span>2019-2021</span><br>Completed PCMB in Class 12</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+<!----------------------projects------------------>
+    <h1 id=My-Project class="sub-title-project">My Projects</h1>
+    <div id="projects">
+        <div class="container">
+            <div class="slider">
+                <div class="project-list">
+                    <img class="project_img" src="C:/Users\KIIT\Desktop\AD_LAB\images\handtracking.png">
+                    <div>
+                        <i class="fa-solid fa-volume-low"></i>
+                        <h2>Computer Vision</h2>
+                        <p>Designed and implemented a contactless audio volume control system utilizing 
+                        hand tracking and gesture recognition technologies, enabling 
+                        intuitive and efficient user interaction.</p>
+                        <a  href="https://github.com/Soumit2003/Volume-Control-Through-Hand-Tracking-and-Gesture-Recognition"><strong>Click here to Learn More</strong></a>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <img class="project_img" src="C:/Users\KIIT\Desktop\AD_LAB\images\Snakegame.png">
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Python game</h2>
+                        <p>Developed a Python-based Snake Game using Pygame, integrating SQL for database management 
+                        to track scores and gameplay statistics, featuring interactive graphics 
+                        and an engaging user interface.</p>
+                        <a  href="https://github.com/Soumit2003/Snake_game"><strong>Click here to Learn More</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="next">></button>
+        <button id="prev"><</button>
+    </div>
+<!--------------------------Contacts----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>  soumit707@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>   9830270523</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/soumit_roy777?igsh=dWJiMzJ4a3c4N3lm"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/14VC6WyFLa/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Soumit372146?t=qxKyhsP1uZrW7xwPPzp6mg&s=08"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/soumit-roy-23aa6b278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Soumit2003"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" dwonload class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <div class="txt">
+                            <p>
+                                <i class="fa-solid fa-comment"></i>    
+                                <strong>
+                                    I would love to hear about your project and how I could help.<br>
+                                    Please fill in the form and I'll get back to you as soon as possible.
+                                </strong>
+                                <i class="fa-solid fa-comment"></i> 
+                            </p>
+                         </div>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name ="email" placeholder="Your Email">
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2 btn-submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------About---------------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+<!-------------------------Projects---------------------------------------->
+<script>
+const slides = document.querySelectorAll(".project-list"); 
+let currentIndex = 0; 
+
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.style.display = "grid"; 
+        } else {
+            slide.style.display = "none"; 
+        }
+    });
+}
+
+
+showSlide(currentIndex);
+
+
+document.getElementById("next").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % slides.length; 
+    showSlide(currentIndex);
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length; 
+    showSlide(currentIndex);
+});
+
+</script>
+
+<!-------------------------Contacts------------------------------>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxik92osLkW_32wah4Wjn1O0xtUYr1-aukHiShAZAjGeMndWX8THlo64phmMn8l86kZDQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Your message has been sent 😊"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
